@@ -35,6 +35,9 @@ A beautiful and functional dotfiles configuration for Arch Linux with Hyprland a
 ### 8. Next Track Notification via Dunst
 <img width="638" height="146" alt="image" src="https://github.com/user-attachments/assets/352b2879-a885-4a76-9ab9-0a9357a0e962" />
 
+### 9. Eww widget for waybar 
+<img width="461" height="899" alt="image" src="https://github.com/user-attachments/assets/74502278-b13a-4970-8ffb-a40b31499b09" />
+
 ## 🧰 Components
 
 - **Terminal**: Alacritty
