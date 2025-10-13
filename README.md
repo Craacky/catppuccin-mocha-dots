@@ -18,7 +18,7 @@ A beautiful and functional dotfiles configuration for Arch Linux with Hyprland a
 <img width="666" height="701" alt="image" src="https://github.com/user-attachments/assets/c6b51854-e518-4d07-8660-01d7dfccf91c" />
 
 ### 3. Rofi as Clipboard Manager
-<img width="901" height="713" alt="image" src="https://github.com/user-attachments/assets/149519d7-e690-48b5-b76e-ebfc66e6643c" />
+<img width="901" height="737" alt="image" src="https://github.com/user-attachments/assets/b4b857e1-6874-4b39-a48c-1781c5a36619" />
 
 ### 4. Rofi as Power Menu
 <img width="198" height="580" alt="image" src="https://github.com/user-attachments/assets/98674f9d-f473-42ca-847f-89bf73bbcb8b" />
