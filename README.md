@@ -56,7 +56,7 @@ This configuration uses the beautiful [Catppuccin Mocha](https://github.com/catp
 
 2. Install required packages:
    ```bash
-   paru -S hyprland rofi dunst waybar alacritty fish
+   paru -S hyprland rofi dunst waybar-cava eww alacritty fish
    ```
 
 3. Copy the configuration files to your system:
