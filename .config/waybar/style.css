@@ -1,0 +1,316 @@
+ * {
+    font-family:
+        "Cantarell", "Noto Sans CJK JP", "JetBrainsMono Nerd Font Propo",
+        "Nerd Font", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@define-color bg       #1e1e2e; 
+@define-color fg       #cdd6f4; 
+@define-color ic       #a6e3a1; 
+@define-color it       #181825; 
+@define-color border   #45475a; 
+@define-color tt       #a6e3a1; 
+
+#waybar {
+    background: @bg;
+    color: @fg;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid @border;
+}
+
+tooltip {
+    background-color: @bg;
+    border: 1px solid @border;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @tt;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+    transition: all 0.2s ease;
+}
+
+#workspaces {
+    background-color: @bg;
+    border-radius: 10px;
+    border: 1px solid @border;
+    border-left: none;
+    border-right:none;
+    margin: 5px;
+    padding: 2px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @ic;
+    border-radius: 6px;
+    margin: 0 2px;
+    padding: 0 8px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    color: @fg;
+    background-color: rgba(166, 227, 161, 0.1);
+}
+
+#workspaces button.active {
+    color: @it;
+    background-color: @ic;
+    font-weight: bold;
+}
+
+#workspaces button.empty:not(.active) {
+    color: #737373;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+    color: #1a1b26;
+}
+
+#custom-separator {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#cava {
+    background-color: @transparent;
+    color: @ic;
+    font-family: monospace;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 1px solid @border;
+    border-left: none;
+    border-right:none;
+    margin: 5px;
+}
+
+#window {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#network.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#network.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#bluetooth.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#pulseaudio.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#pulseaudio.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#clock.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#clock.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 10px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#tray {
+    background-color: @bg;
+    padding: 0 10px;
+    border: 1px solid @border;
+    border-radius: 10px;
+    margin: 5px;
+    /* border-left: none;; */
+    /* border-right: none;; */
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f38ba8;
+}
+
+@keyframes blink {
+    to {
+        background-color: #f38ba8;
+        color: #1a1b26;
+    }
+}
+
+.modules-left > widget\:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget\:last-child > #workspaces {
+    margin-right: 0;
+
+}#custom-kdb_icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#language {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+}
+
+#mpris.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#mpris.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+}
+
+#cpu.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#cpu.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0px 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#memory.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#memory {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+}
+
+#battery.icon {
+    background-color: @ic;
+    color: @it;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    margin: 5px 0 5px 5px;
+    border: 1px solid @border;
+    border-right: none;
+}
+
+#battery.text {
+    background-color: @bg;
+    color: @fg;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border: 1px solid @border;
+    border-left: none;
+    border-right: none;
+}
+
+#battery.critical:not(.charging) {
+    animation: blink 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate;
+}
