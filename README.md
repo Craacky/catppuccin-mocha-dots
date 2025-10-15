@@ -77,6 +77,7 @@ This configuration uses the beautiful [Catppuccin Mocha](https://github.com/catp
 - **Waybar** status bar with system information
 - **Alacritty** terminal with Catppuccin theme
 - **Fish** shell for enhanced terminal experience
+- **Eww** widget for calendar and track state in waybar clock click
 
 ## 🔧 Customization
 
